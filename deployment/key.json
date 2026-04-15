@@ -1,0 +1,29 @@
+{
+  "keys": [
+    {
+      "KeyID": "test-key-001",
+      "KeyValue": "secret-value-001",
+      "Description": "Valid active key for Acme Corporation"
+    },
+    {
+      "KeyID": "test-key-002",
+      "KeyValue": "secret-value-002",
+      "Description": "Valid active key for Beta Industries"
+    },
+    {
+      "KeyID": "test-key-003",
+      "KeyValue": "secret-value-003",
+      "Description": "Disabled key for Gamma LLC (should fail)"
+    },
+    {
+      "KeyID": "test-key-001",
+      "KeyValue": "wrong-value",
+      "Description": "Valid KeyID but wrong KeyValue (should fail)"
+    },
+    {
+      "KeyID": "invalid-key",
+      "KeyValue": "some-value",
+      "Description": "Non-existent KeyID (should fail)"
+    }
+  ]
+}

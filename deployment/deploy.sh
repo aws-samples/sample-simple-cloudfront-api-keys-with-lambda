@@ -111,7 +111,7 @@ TEMP_DIR=$(mktemp -d)
 echo "Using temporary directory: $TEMP_DIR"
 
 # Copy Lambda function
-cp lambda_edge_auth.py "$TEMP_DIR/"
+cp ../lambda_edge_auth.py "$TEMP_DIR/"
 
 # Create deployment package
 cd "$TEMP_DIR"
